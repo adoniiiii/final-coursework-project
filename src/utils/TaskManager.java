@@ -86,7 +86,7 @@ public class TaskManager {
             .map(Map.Entry::getKey)
             .orElse("N/A");
     
-        report.put("Total Users", allTasks.keySet().size());
+        report.put("Total Users", UserManager.getUserCount());
         report.put("Total Tasks", totalTasks);
         report.put("Most Frequent Priority", mostCommonPriority);
         report.put("Most Common Status", mostCommonStatus);
