@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #edf2f8;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddTaskController">
+   <children>
+      <TextField fx:id="descriptionField" layoutX="87.0" layoutY="115.0" prefHeight="48.0" prefWidth="426.0">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font></TextField>
+      <Label layoutX="87.0" layoutY="87.0" prefHeight="27.0" prefWidth="121.0" text="Task name:">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="174.0" prefHeight="27.0" prefWidth="121.0" text="Due Date:">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dueDateField" layoutX="87.0" layoutY="208.0" prefHeight="30.0" prefWidth="133.0" style="-fx-font-family: century gothic; -fx-font-size: 15;" />
+      <Label layoutX="363.0" layoutY="174.0" prefHeight="27.0" prefWidth="121.0" text="Priority:">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="priorityCombo" layoutX="363.0" layoutY="208.0" prefWidth="150.0" style="-fx-font-family: century gothic; -fx-font-size: 15;" />
+      <Button fx:id="saveBtn" alignment="CENTER" layoutX="248.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="35.0" prefWidth="111.0" text="Save">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="173.0" layoutY="40.0" prefHeight="23.0" prefWidth="278.0" text="Let's add new task &lt;(￣︶￣)&gt;">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="67.0" layoutY="34.0" prefHeight="46.0" prefWidth="40.0" text="₊⊹">
+         <font>
+            <Font name="Century Gothic" size="30.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="22.0" prefHeight="27.0" prefWidth="60.0" text="★">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="493.0" layoutY="66.0" prefHeight="27.0" prefWidth="60.0" text="₊⊹">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="513.0" layoutY="5.0" prefHeight="94.0" prefWidth="60.0" text="✮">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="513.0" layoutY="221.0" prefHeight="27.0" prefWidth="60.0" text="°" textFill="#737272">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="483.0" layoutY="57.0" prefHeight="27.0" prefWidth="60.0" text="°" textFill="#737272">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="64.0" prefHeight="27.0" prefWidth="60.0" text="°" textFill="#737272">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="27.0" layoutY="83.0" prefHeight="27.0" prefWidth="60.0" text="°" textFill="#737272">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="57.0" layoutY="11.0" prefHeight="27.0" prefWidth="60.0" text="°" textFill="#737272">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="500.0" layoutY="229.0" prefHeight="27.0" prefWidth="60.0" text="★">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="500.0" layoutY="211.0" prefHeight="27.0" prefWidth="60.0" text="°" textFill="#737272">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="286.0" prefHeight="23.0" prefWidth="278.0" text="────────⋆">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="295.0" layoutY="286.0" prefHeight="23.0" prefWidth="278.0" text="⋆────────">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="80.0" prefHeight="94.0" prefWidth="60.0" text="✮">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label fx:id="feedbackLabel" alignment="CENTER" layoutX="143.0" layoutY="328.0" prefHeight="18.0" prefWidth="321.0">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

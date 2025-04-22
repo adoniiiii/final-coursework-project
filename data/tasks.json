@@ -1,0 +1,30 @@
+{
+  "gojo": [
+    {
+      "description": "save the world",
+      "dueDate": "2025-05-01",
+      "priority": "Normal",
+      "status": "To-Do"
+    },
+    {
+      "description": "take a nap at 14:55",
+      "dueDate": "2025-05-09",
+      "priority": "High",
+      "status": "To-Do"
+    },
+    {
+      "description": "learn how to make \"seledka pod shuboi\"",
+      "dueDate": "2025-05-06",
+      "priority": "Urgent",
+      "status": "In Progress"
+    }
+  ],
+  "alina": [
+    {
+      "description": "eat",
+      "dueDate": "2025-05-15",
+      "priority": "High",
+      "status": "In Progress"
+    }
+  ]
+}

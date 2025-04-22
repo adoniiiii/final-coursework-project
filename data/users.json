@@ -1,0 +1,26 @@
+{
+  "admin": {
+    "password": "12345",
+    "role": "admin",
+    "lastLogin": "22.04.2025 19:54",
+    "active": true
+  },
+  "gojo": {
+    "password": "satoru",
+    "role": "user",
+    "lastLogin": "22.04.2025 19:13",
+    "active": true
+  },
+  "alina": {
+    "password": "alina",
+    "role": "user",
+    "lastLogin": "22.04.2025 20:12",
+    "active": true
+  },
+  "the_wickend": {
+    "password": "otdihayu",
+    "role": "user",
+    "lastLogin": "22.04.2025 18:34",
+    "active": true
+  }
+}
