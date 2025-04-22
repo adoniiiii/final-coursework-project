@@ -1,5 +1,5 @@
-Total Users: 5
-Total Tasks: 8
-Most Frequent Priority: Urgent
+Total Users: 4
+Total Tasks: 5
+Most Frequent Priority: High
 Most Common Status: To-Do
-Deactivated Users: 0
+Deactivated Users: 1
