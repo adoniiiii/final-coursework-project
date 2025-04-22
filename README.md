@@ -1,7 +1,8 @@
 # Task List Manager
 
 **Student:** Kazakbaeva Aidai
-**Presentation:** https://www.canva.com/design/DAGlYPt2XH0/2_8gq3EN_6OrVO6JMXyBgw/edit?utm_content=DAGlYPt2XH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+    
+Presentation: https://www.canva.com/design/DAGlYPt2XH0/2_8gq3EN_6OrVO6JMXyBgw/edit?utm_content=DAGlYPt2XH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 ---
 
 ## Description
