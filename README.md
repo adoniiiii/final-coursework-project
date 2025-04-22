@@ -8,11 +8,11 @@
 
 This project is a graphical JavaFX-based task list manager that allows users to perform full **CRUD (Create, Read, Update, Delete)** operations on task records with user authentication. It also includes an **admin dashboard** and task reporting, along with UI and data persistence using JSON files.
 
-This implementation extends requirements by offering a full **GUI-based** interface while retaining modular structure and file-based storage. (b ᵔ▽ᵔ)b
+This implementation extends requirements by offering a full **GUI-based** interface while retaining modular structure and file-based storage.    (b ᵔ▽ᵔ)b
 
 ---
 
-##Objectives
+## Objectives
 
 - Create a user-friendly JavaFX application for task tracking.
 - Implement secure user authentication with role-based access.
