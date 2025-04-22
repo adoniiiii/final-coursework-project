@@ -1,6 +1,6 @@
 # Task List Manager
 
-**Student:** Kazakbaeva Aidai\
+**Student:** Kazakbaeva Aidai
 
 ---
 
