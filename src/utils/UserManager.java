@@ -130,5 +130,7 @@ public class UserManager {
         User user = users.get(username);
         return user != null && user.isActive();
     }
-    
+    public static int getUserCount() {
+        return users.size(); 
+    }
 }
