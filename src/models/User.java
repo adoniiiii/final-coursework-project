@@ -15,7 +15,6 @@ public class User {
         this.active = true;
     }
 
-    // Getters & setters
     public String getPassword() { return password; }
     public String getRole() { return role; }
     public String getLastLogin() { return lastLogin; }
