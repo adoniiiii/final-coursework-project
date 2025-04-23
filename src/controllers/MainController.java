@@ -63,7 +63,7 @@ public class MainController {
         this.username = username;
         greetingLabel.setText("Hi, " + username + "!");
     
-        taskTable.setItems(TaskManager.getUserTasks(username)); // ✅ load user tasks!
+        taskTable.setItems(TaskManager.getUserTasks(username)); 
     }    
     
     private void deleteTask(Task task) {
@@ -79,7 +79,7 @@ public class MainController {
             AddTaskController controller = loader.getController();
             controller.setTaskTable(taskTable);
             controller.setUsername(username);
-            controller.prefillTask(task); // <-- you'll add this
+            controller.prefillTask(task); 
     
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
@@ -94,16 +94,13 @@ public class MainController {
     
     
     public void initialize() {
-        // Set up columns
         taskCol.setCellValueFactory(new PropertyValueFactory<>("description"));
         priorityCol.setCellValueFactory(new PropertyValueFactory<>("priority"));
         dueDateCol.setCellValueFactory(new PropertyValueFactory<>("dueDate"));
         statusCol.setCellValueFactory(new PropertyValueFactory<>("status"));
 
-        // Make editable
         taskTable.setEditable(true);
         
-        // Date picker in cell
         dueDateCol.setCellFactory(_ -> new TableCell<Task, String>() {
             private final DatePicker datePicker = new DatePicker();
         
@@ -113,15 +110,13 @@ public class MainController {
                     LocalDate selectedDate = datePicker.getValue();
                     if (selectedDate != null) {
                         task.setDueDate(selectedDate.toString());
-                        TaskManager.saveUserTasks(username, taskTable.getItems()); // ✅ Save here!
+                        TaskManager.saveUserTasks(username, taskTable.getItems()); 
                     }
                 });
         
-                //  Disable manual typing
                 datePicker.getEditor().setDisable(true);
                 datePicker.getEditor().setOpacity(1);
         
-                // Prevent past dates
                 datePicker.setDayCellFactory(_ -> new DateCell() {
                     @Override
                     public void updateItem(LocalDate date, boolean empty) {
@@ -153,7 +148,6 @@ public class MainController {
         priorityCol.setCellFactory(ComboBoxTableCell.forTableColumn("Urgent", "High", "Normal", "Low"));
         statusCol.setCellFactory(ComboBoxTableCell.forTableColumn("To-Do", "In Progress", "Done"));
 
-        // Edit commits
         dueDateCol.setOnEditCommit(event -> {
             Task task = event.getRowValue();
             task.setDueDate(event.getNewValue());
@@ -179,7 +173,6 @@ public class MainController {
                 if (event.getClickCount() == 1 && !row.isEmpty()) {
                     Task clickedTask = row.getItem();
         
-                    // Only react if click was in the "Task" column
                     int columnIndex = taskTable.getSelectionModel().getSelectedCells().get(0).getColumn();
                     if (columnIndex == taskCol.getTableView().getColumns().indexOf(taskCol)) {
                         showEditConfirmation(clickedTask);
@@ -218,10 +211,7 @@ public class MainController {
 
     @FXML
     private void handleLogout() {
-        // Clear current user (optional)
         utils.UserManager.setCurrentUser(null);
-
-        // Switch to Login screen
         utils.SceneManager.switchScene("LoginView.fxml");
     }
 
