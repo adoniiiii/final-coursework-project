@@ -12,8 +12,6 @@ public class Task {
         this.priority = priority;
         this.status = status;
     }
-
-    // Getters
     public String getDescription() {
         return description;
     }
@@ -30,7 +28,6 @@ public class Task {
         return status;
     }
 
-    // Setters
     public void setDescription(String description) {
         this.description = description;
     }
